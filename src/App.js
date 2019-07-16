@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import NavBar from './Components/NavBar/NavBar'
+import Name from './Components/Name/Name'
+import Footer from './Components/Footer/Footer'
+import fog from './static/fog.mp4'
+import smoke from './static/smoke.mp4'
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          helloo <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render(){
+    return(
+      <div id="fullScreenDiv"> 
+      <NavBar />
+        <div id="videoBlock">  
+          <video preload="preload" autoPlay loop id="video" >
+              <source src={fog} type="video/webm"></source>
+              <source src={fog} type="video/mp4"></source>
+          </video>  
+          </div>
+          <div id="messageBox"> 
+              <div>
+                  <Name />
+              </div>
+           </div>   
+           {/* <span>Free Stock videos by <a rel="nofollow" target="_blank" href="http://www.videezy.com">Videezy</a></span> */}
+          <Footer />
+      </div>
+    )
+  }
 }
 
 export default App;
+

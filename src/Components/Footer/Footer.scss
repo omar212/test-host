@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
+    
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    flex-shrink: 0;
+    margin-top: auto;
+    // height: 100px;
+    width: 100%;
+    color: black !important;
+    background-color: white !important;
+    
+    
+  }
+
+  .tool-text {
+    flex-grow: 1;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif !important;
+
+  }
