@@ -14,11 +14,11 @@ class App extends Component {
       <NavBar />
         <div id="videoBlock">  
           <video 
-              preload="auto"
+              preload="auto" 
               autoPlay
-              muted 
+              muted="" 
               loop 
-              playsInline
+              playsInline=""
               video-auto-ctrl="true"
               id="video" >
               <source src={fog} type="video/webm"></source>
