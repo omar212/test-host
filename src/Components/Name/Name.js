@@ -10,7 +10,7 @@ class Name extends Component {
         return (  
             <div className="container">
                 <div className="box">
-                    Sef Green .
+                    Sef Green.
                 </div>
             </div>
         );

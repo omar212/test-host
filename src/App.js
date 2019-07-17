@@ -13,7 +13,14 @@ class App extends Component {
       <div id="fullScreenDiv"> 
       <NavBar />
         <div id="videoBlock">  
-          <video preLoad autoPlay loop  controls="true" id="video" >
+          <video 
+              preload
+              autoPlay
+              muted 
+              loop 
+              playsinline
+              video-auto-ctrl
+              id="video" >
               <source src={fog} type="video/webm"></source>
               <source src={fog} type="video/mp4"></source>
           </video>  
