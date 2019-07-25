@@ -32,12 +32,12 @@ export default function ButtonAppBar()  {
     <div>
         <AppBar className="footer">
           <Toolbar className="tool-text">
-            <Typography variant="h5" className={classes.title}>
-              . سف أخفر
-            </Typography>
-            <Typography variant="h6" className={classes.instagram}>
+            <Typography variant="h7" className={classes.title}>
+              . سف أخفر .  سف أخفر. سف أخفر. سف أخفر. سف أخفر
+            </Typography> <br />
+            {/* <Typography variant="h6" className={classes.instagram}>
               Instagram: @sefgreenco
-            </Typography>
+            </Typography> */}
           </Toolbar>
         </AppBar>
       </div> );
