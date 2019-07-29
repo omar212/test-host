@@ -3,6 +3,8 @@ html, body {
     margin: 0;
     position: relative;
     min-height: 100%;
+    box-shadow: 5px 10px black;
+    background-color: transparent !important;
     
 }
 
@@ -14,13 +16,17 @@ html, body {
     margin-top: auto;
     // height: 100px;
     width: 100%;
+    // border: 1px solid;
+    // padding: 10px;
+    box-shadow: 5px 10px 8px 10px black;
     color: black !important;
-    background-color: white !important;
+    background-color: transparent !important;
     
     
   }
 
   .tool-text {
+    box-shadow: 5px 10px 8px 10px black;
     flex-grow: 1;
     text-align: center;
     font-family: 'Times New Roman', Times, serif !important;
