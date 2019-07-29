@@ -4,6 +4,17 @@ html, body {
   text-align: center;
 }
 
+
+.main-layout {
+  height: 95vh; // 95 w/o Footer, 90 w/ Footer
+  width: 100%;
+
+  // background-image: url(require('./static/background.jpeg'));
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 #fullScreenDiv{
   /* width:100%; */
   /* min-height: 100%; */
