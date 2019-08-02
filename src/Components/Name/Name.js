@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Name.scss';
+import Login from '../Login/Login'
 
 class Name extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class Name extends Component {
                 <div className="box">
                     Sef Green.
                 </div>
+                
             </div>
         );
     }

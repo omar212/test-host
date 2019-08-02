@@ -1,0 +1,159 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-layout {
+      height: 100vh; // 95 w/o Footer, 90 w/ Footer
+      width: 50%;
+      // background-size: cover;
+      // background-position: center;
+      // background-repeat: repeat;
+    }
+  }
+  .main-layout {
+    height: 100vh; // 95 w/o Footer, 90 w/ Footer
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+  }
+  
+  #fullScreenDiv{
+    /* width:100%; */
+    /* min-height: 100%; */
+    /* max-width: 100%;  */
+   /* Set the height to match that of the viewport. */
+    /* height: 150%;
+    width: auto; */
+    /* padding:0!important; */
+    /* margin: 0!important; */
+    /* background-color: transparent; */
+    position: relative;
+  }
+  
+  #video{    
+    width: 100vw; 
+    height: 90vh;
+  
+    object-fit: cover;
+    /* left: 0px; */
+    /* top: 0px; */
+    /* z-index: 1; */
+  }
+  
+  /* @media (min-aspect-ratio: 16/9) {
+    #video{
+      height: 150%;
+      top: -100%;
+    }
+    #videosubstitute{
+      display:block;
+      width: 100%;
+      height: 100%;}
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    #video {
+      width: 150%;
+      left: -100%;
+    }
+    #videosubstitute{display:block;width:auto;height:100%;}
+  } */
+  
+  #messageBox{
+    position: absolute;  top: 0;  left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:100%;
+  }
+  
+  .image1 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    left: 9px;
+    top: 93px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  
+  .image2 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    right: 54px;
+    top: 122px;
+    width: 10%;
+    min-width: 15%;
+    min-height: 15%;
+    height: 15%;
+  }
+  
+  .image3 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    left: 310px;
+    bottom: 334px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  
+  .image4 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    right: 305px;
+    bottom: 334px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  
+  
+  .image5 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    left: 31px;
+    bottom: 104px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  
+  .image6 {
+    border-radius: 15%;
+    opacity: 0.6;
+    position: absolute;
+    left: 309px;
+    bottom: 104px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  
+  .image7 {
+    border-radius: 15%;
+    opacity: 0.7;
+    position: absolute;
+    right: 168px;
+    bottom: 169px;
+    width: 10%;
+    height: 15%;
+    min-width: 15%;
+    min-height: 15%;
+  }
+  

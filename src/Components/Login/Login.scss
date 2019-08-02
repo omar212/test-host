@@ -1,0 +1,86 @@
+.main-container {
+    right: 61px;
+    top: 265px;
+    margin: 2px;
+    height: 21em;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 45em;
+    background: white;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.8;
+    .login-box {
+        width: 17em;
+        height: 15em;
+        align-items: center;
+        justify-content: center;
+        right: 296px;
+        top: 107px;
+        // border: 2px solid black;
+        margin: 20px;
+        .login-title {
+            top: 20px;
+            font-size: 26px;
+        }
+        .login-container {
+            background: lightblue;
+            right: 382px;
+            top: 111px;
+            height: 12em;
+            // display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            width: 17em;
+
+            .login-info{
+                position: absolute;
+                top: 69px;
+            }
+        }
+    }
+    .signup-box {
+        width: 17em;
+        height: 15em;
+        align-items: center;
+        justify-content: center;
+        right: 23px;
+        top: 107px;
+        margin: 20px;
+        // border: 2px solid black;
+        .signup-title {
+            top: 20px;
+            font-size: 26px;
+        }
+        .signup-container {
+            background: lightblue;
+            right: 66px;
+            top: 111px;
+            height: 12em;
+            opacity: 1 !important;
+            // display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            width: 17em;
+            
+            .signup-info{
+                position: absolute;
+                top: 69px;
+            }
+        }
+    }
+    
+    
+}
+
+    
+
+@media only screen and (max-width: 600px) {
+    .box {
+        min-width: 100px;
+        min-height: 50px;
+    }
+  }

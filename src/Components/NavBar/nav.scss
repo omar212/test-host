@@ -1,5 +1,138 @@
 .nav-bar {
-    background: transparent !important;
-    color: black !important;
+   
 }
 
+.menu {
+    display: block;
+    
+
+    background: transparent !important;
+    color: white !important;
+  
+    position: relative;
+  
+    height: 60px;
+    width: 100%;
+  
+    align-items: center;
+
+  
+    box-sizing: border-box;
+
+    color: black;
+  
+    font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+      monospace;
+    font-size: carbon--type-scale(6);
+  
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  
+    z-index: 9999;
+  
+    & > * {
+      margin: 0;
+      padding: 0;
+  
+      margin-left: 10px;
+    }
+  
+    .global-ledger {
+      text-decoration: none;
+      color: black;
+      font-family: 'IBM Plex Sans', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier,
+        monospace;
+    }
+  
+    .menu__logo {
+      margin-top: 35px;
+      margin-left: 20px;
+    }
+  
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .menu__spacer {
+      color: black;
+    }
+  
+    .menu__list {
+      list-style-type: none;
+      float: right;
+      margin-top: 20px;
+      //margin-left: 46%;
+      // margin-right: 0%;
+  
+      .menu__list-item {
+        display: inline;
+  
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+
+        margin: 20px 0;
+  
+        text-align: center;
+  
+        color: black;
+  
+        border-bottom: 3px solid transparent;
+  
+        cursor: pointer;
+  
+        .menu__link {
+          text-decoration: none;
+  
+  
+          color: inherit;
+          font-size: large;
+        }
+
+        .logo {
+            float: left !important;
+            margin-top: 20px;
+        }
+      }
+  
+      .menu__item-active {
+        font-weight: bold;
+        color: black;
+  
+        border-bottom: 3px solid black !important;
+      }
+    }
+  
+    .menu__icons {
+      position: absolute;
+      right: 0;
+      top: 10px;
+  
+      a {
+        padding: 17px;
+  
+        font-size: 18px;
+  
+        &:hover {
+          border-bottom: 3px solid black;
+        }
+  
+        svg {
+          fill: black;
+        }
+      }
+  
+      #menu_avatar {
+        vertical-align: middle;
+  
+        margin-right: 10px;
+  
+        width: 35px;
+  
+        border-radius: 50%;
+      }
+    }
+  }
+  

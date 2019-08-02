@@ -6,42 +6,62 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import { NavLink } from 'react-router-dom'
 
 import './nav.scss'
 
-const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    flexGrow: 1,
-    textAlign: 'center',
-
-    fontFamily: 'Times New Roman, Times, serif'
-  },
-}));
-
 export default function ButtonAppBar() {
-  const classes = useStyles();
-
-
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className="nav-bar">
-        <Toolbar>
-            {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="Menu">
-              <MenuIcon />
-            </IconButton> */}
-            <Typography variant="h6" className={classes.title}>
-              Fashion & Creative
-            </Typography>
-          <Button color="inherit"></Button>
-        </Toolbar>
-      </AppBar>
-    </div>
+    <nav className="menu">
+            
+            <ul className="menu__list">
+
+              {/* <li className='menu__list-item'>
+                <IconButton edge="start" className="menu__list logo" >
+                  <MenuIcon />
+                </IconButton>
+              </li> */}
+
+              <li className='menu__list-item'>
+
+                  <a variant="h6" href="/shop" className="menu__link">
+                      Shop
+                  </a>
+
+              </li>
+
+              <span className="menu__spacer">|</span>
+
+              <li className='menu__list-item'>
+
+                <a variant="h6" href="/gallery" className="menu__link">
+                    Gallery
+                </a>
+
+              </li>
+      
+              <span className="menu__spacer">|</span>
+
+              <li className='menu__list-item'>
+
+                <a href="/aboutus" variant="h6" className="menu__link">
+                    About Us
+                </a>
+
+              </li>
+
+              <span className="menu__spacer" >|</span>
+
+              <li className='menu__list-item'>
+
+                <a href="/account"  variant="h6" className="menu__link">
+                    Account
+                </a>
+
+              </li>
+              
+            </ul>
+    </nav>
   );
 }
