@@ -63,13 +63,10 @@
   
     .menu__list {
       list-style-type: none;
-      // float: right;
-      // margin-top: 20px;
-      //margin-left: 46%;
-      // margin-right: 0%;
-
+    
       @media (max-width: 800px) {
         font-size: 0px;
+        margin: 0px;
       }
   
       .menu__list-item {
@@ -90,7 +87,11 @@
         cursor: pointer;
   
         @media (max-width: 800px) {
-          margin: -27px;
+          margin: -33px;
+
+          ul {
+            padding-inline-start: 0px;
+          }
         }
         .menu__link {
           text-decoration: none;

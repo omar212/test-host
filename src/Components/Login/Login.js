@@ -15,15 +15,15 @@ class Login extends Component {
                     Sef Green.
                 </div>
                 
-                {/* <div className="main-container">                     */}
+                <div className="main-container">                    
                 
-                        {/* <div className="login-box">
+                        <div className="login-box">
 
                             <span className="login-title">Log-In</span>
 
                             <div className="login-container">
 
-                                {/* <div className="login-info">
+                                <div className="login-info">
                                     Email: <input /> 
                                     <br />
                                     password: <input />
@@ -33,24 +33,24 @@ class Login extends Component {
 
                         </div> 
 
-                        // <div className="signup-box">
+                         <div className="signup-box">
 
-                        //     <span className="signup-title">Create Account</span>
+                             <span className="signup-title">Create Account</span>
 
-                        //     <div className="signup-container">
+                             <div className="signup-container">
 
-                        //         {/* <div className="signup-info">
-                        //                 Email: <input /> <br />
-                        //                 password: <input /> <br />
-                        //                 repeat password: <input /> <br />
-                        //                 password: <input />
-                        //         </div> 
+                                  <div className="signup-info">
+                                         Email: <input /> <br />
+                                         password: <input /> <br />
+                                         repeat password: <input /> <br />
+                                         password: <input />
+                                 </div> 
 
-                        //     </div>
+                        </div>
 
-                    // </div>   */}  
+                     </div>   
 
-                {/* </div>  */}
+                 </div> 
             
             </div>
             
