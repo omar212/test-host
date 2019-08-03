@@ -1,11 +1,6 @@
-.nav-bar {
-   
-}
-
 .menu {
-    display: block;
-    
-
+    display: flex; 
+    flex-direction: row-reverse; 
     background: transparent !important;
     color: white !important;
   
@@ -29,6 +24,10 @@
       0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   
     z-index: 9999;
+
+    @media (max-width: 800px) {
+      display: grid;
+    }
   
     & > * {
       margin: 0;
@@ -56,18 +55,21 @@
   
     .menu__spacer {
       color: black;
+
+      @media (max-width: 800px) {
+        visibility: hidden;
+      }
     }
   
     .menu__list {
       list-style-type: none;
-      float: right;
-      margin-top: 20px;
+      // float: right;
+      // margin-top: 20px;
       //margin-left: 46%;
       // margin-right: 0%;
   
       .menu__list-item {
         display: inline;
-  
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 80px;
@@ -83,6 +85,9 @@
   
         cursor: pointer;
   
+        @media (max-width: 800px) {
+          margin: -27px;
+        }
         .menu__link {
           text-decoration: none;
   

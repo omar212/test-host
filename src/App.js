@@ -7,10 +7,10 @@ import Gallery from './Components/Gallery/Gallery'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Account from './Components/Account/Account'
 import Shop from './Components/Shop/Shop'
-
+import NavBar from './Components/NavBar/NavBar'
+import Footer from './Components/Footer/Footer'
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-
 
 
 class App extends Component {
@@ -19,14 +19,16 @@ class App extends Component {
   
     return(
         <BrowserRouter>
-          <Switch>
-            <Route path="/" component={Home} exact/>
-            <Route path="/login" component={Login}/>
-            <Route path="/gallery" component={Gallery}/>
-            <Route path="/account" component={Account}/>
-            <Route path="/aboutus" component={AboutUs}/>
-            <Route path="/shop" component={Shop}/>
-          </Switch>
+          <NavBar />
+            <Switch>
+              <Route path="/" component={Home} exact/>
+              <Route path="/login" component={Login} exact/>
+              <Route path="/gallery" component={Gallery} exact/>
+              <Route path="/aboutus" component={AboutUs} exact/>
+              <Route path="/account" component={Home} exact/>
+              <Route path="/shop" component={Shop} exact/>
+            </Switch>
+          <Footer/>
         </BrowserRouter> 
     )
   }

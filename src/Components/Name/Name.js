@@ -13,7 +13,7 @@ class Name extends Component {
                 <div className="box">
                     Sef Green.
                 </div>
-                
+                <Login />
             </div>
         );
     }

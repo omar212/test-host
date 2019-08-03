@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Construction from '../Construction/Construction'
 
 class Gallery extends Component {
     constructor(props) {
@@ -8,8 +8,8 @@ class Gallery extends Component {
     }
     render() { 
         return ( 
-            <div>
-                This is the Gallery Page
+            <div className="main-layout">
+                <Construction />
             </div>
          );
     }

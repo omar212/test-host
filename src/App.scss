@@ -1,8 +1,14 @@
-.main-layout {
+html, body {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .main-layout {
     height: 100vh; // 95 w/o Footer, 90 w/ Footer
     width: 100%;
     display: flex; 
-    background-image: url('../../static/background.JPG'); 
+    background-image: url('./static/background.JPG'); 
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -13,4 +19,5 @@
       flex-direction: column;
       align-items: center;
     }
-}
+  
+  }

@@ -1,0 +1,16 @@
+.main-layout {
+    height: 100vh; // 95 w/o Footer, 90 w/ Footer
+    width: 100%;
+    display: flex; 
+    background-image: url('./static/background.JPG'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+
+    @media (max-width: 800px) {
+      width: initial;
+      background-position: cover;
+      flex-direction: column;
+      align-items: center;
+    }
+  

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import './AboutUs.scss'
+import Construction from '../Construction/Construction'
 
 class AboutUs extends Component {
     constructor(props) {
@@ -8,8 +9,8 @@ class AboutUs extends Component {
     }
     render() { 
         return ( 
-            <div>
-                This is the AboutUs Page
+            <div className="main-layout">
+                <Construction />
             </div>
          );
     }

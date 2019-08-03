@@ -8,7 +8,7 @@ class Account extends Component {
     }
     render() { 
         return ( 
-            <div>
+            <div className="main-layout">
                 This is the Account Page
             </div>
          );

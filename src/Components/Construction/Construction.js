@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Construction from '../Construction/Construction'
+import './Construction.scss'
 
-
-class Shop extends Component {
+class Construction extends Component {
     constructor(props) {
         super(props);
         this.state = {  }
@@ -10,10 +9,13 @@ class Shop extends Component {
     render() { 
         return ( 
             <div className="main-layout">
-                <Construction />
+                <div className="construction">
+                    Coming Soon... <br />
+                    Sef Green
+                </div>
             </div>
          );
     }
 }
  
-export default Shop;
+export default Construction;
