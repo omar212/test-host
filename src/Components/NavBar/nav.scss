@@ -25,7 +25,7 @@
   
     z-index: 9999;
 
-    @media (max-width: 800px) {
+    @media (max-width: 850px) {
       display: grid;
     }
   
@@ -67,6 +67,10 @@
       // margin-top: 20px;
       //margin-left: 46%;
       // margin-right: 0%;
+
+      @media (max-width: 800px) {
+        font-size: 0px;
+      }
   
       .menu__list-item {
         display: inline;
