@@ -1,26 +1,110 @@
-.footer {
-    left: 0;
-    bottom: 0;
-    height: 60px;
-    flex-shrink: 0;
-    margin-top: auto;
-    // height: 100px;
-    width: 75%;
-    // border: 1px solid;
-    // padding: 10px;
-    box-shadow: 5px 10px 8px 10px black;
-    color: black !important;
-    background-color: transparent !important;
+.footer-wrapper {
+  display: flex;
     
+  flex-shrink: 0;
+
+  font-size: 20px;
+
+  height: 5vh;
+
+  background-color: white;
+
+  overflow: hidden;
+
+  color: black;
+
+  font-family: 'Times New Roman', Times, serif;
+
+  
+
+  .footer-contatiner {
+      display: inherit;
+
+      align-items: center;
+      justify-content: space-between;
+
+      width: 100%;
+
+      list-style-type: none;
+
+      margin: 0 5rem;
+
+      @media (max-width: 850px) {
+        margin: 0;
+        padding: 0px;
+
+      }
+
+      .logo-footer {
+        width: 60px;
+
+        @media (max-width: 850px) {
+          width: 104px;
+          margin-right: -14%;
+          margin-left: 1%
+        }
+
+      }
+
+      .cusr-footer {
+
+        text-decoration: none;
+
+        display: flex;
+
+        width: 276px;
+
+        left: 72px;
+
+        justify-content: space-around;
+
+        position: relative;
+
+        
+        @media (max-width: 850px) {
+          width: 400px;
+          left: 72px;
+          justify-content: space-around;
+          position: relative;
+          margin-right: 21%;
+        }
+        
+        .menu__spacer {
+          color: black;
     
-  }
+          @media (max-width: 800px) {
+            visibility: hidden;
+          }
+        }
 
-  .tool-text {
-    box-shadow: 5px 10px 8px 10px black;
-    flex-grow: 1;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif !important;
+        a {
+          text-decoration: none;
 
+          color: black;
+
+          &:hover {
+              text-decoration: underline;
+          }
+        } 
+
+      }
+
+      li {
+          display: inline; 
+
+          a {
+              text-decoration: none;
+
+              color: black;
+
+              &:hover {
+                  text-decoration: underline;
+              }
+          }
+      }
   }
+}
+
+
 
   
