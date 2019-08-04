@@ -11,7 +11,7 @@ class Construction extends Component {
             <div className="main-layout">
                 <div className="construction">
                     Coming Soon... <br />
-                    Sef Green
+                    Sef Green.
                 </div>
             </div>
          );
