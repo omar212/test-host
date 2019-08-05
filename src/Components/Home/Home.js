@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import background from '../../static/background.JPG'
-import NavBar from '../NavBar/NavBar'
-import Footer from '../Footer/Footer'
-import Name from '../Name/Name'
 import Login from '../Login/Login'
 import Construction from '../Construction/Construction';
 

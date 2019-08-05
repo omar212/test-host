@@ -1,8 +1,7 @@
 .name-login-box {
-    position: absolute;
     display: flex;
-    height: 21em;
-    width: 75em;
+    height: 28em;
+    width: 78em;
     right: 61px;
     top: 265px;
     justify-content: space-evenly;
@@ -10,37 +9,31 @@
     flex-wrap: nowrap; 
 
     @media (max-width: 800px) {
+        display: flex;
         margin-top: 10px;
         margin-bottom: 10px;
         flex-flow: column;
         height: 50em;
         width: 19em;
-        position: inherit;
-        top: 0;
         justify-content: space-between;
+        margin-bottom: 60%;
         
     }
 
 
 
     .box {
-        // position: absolute;
+        
         top: 44%;
         left: 20%;
         margin-right: auto;
-        // transform: translate(-50%, -50%);
-        // position: relative;
         color: black;
         min-width: 100px;
         min-height: 43px;
-        // text-align: center;
         background: transparent;
         font-size: 75px;
         font-family: 'Times New Roman', Times, serif;
 
-        // @media (min-width: 800px) and (max-width: 1200px) {
-        //     flex-flow: column;
-        // }  
         @media (max-width: 800px){
             margin-right: 0;
             word-break: break-all;
@@ -48,99 +41,146 @@
         }
     }
 
-    .main-container {
-        right: 61px;
-        top: 265px;
-        height: 21em;
+    .ui.card {
+        height: 28em;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width: 45em;
+        width: 700px;
         background: white;
-        font-family: 'Times New Roman', Times, serif;
         opacity: 0.8;
         
         @media (max-width: 800px){ 
-            width: 19em;
-            height: 40em;
-            // border-radius: 20%;
+            display: flex;
+            flex-direction: column;
+            height: 130%;
+            width: 23em;
         }
     
+        .margin-space {
+            border-left: 2px solid black;
+            height: 67%;
+        }
+        
+        
+
         .login-box {
             width: 17em;
-            height: 15em;
-            align-items: center;
-            justify-content: center;
-            right: 296px;
-            top: 107px;
-            // border: 2px solid black;
             margin: 20px;
+
             @media (max-width: 800px){ 
                 width: 21em;
 
             }
             
             .login-title {
-                top: 20px;
                 font-size: 26px;
+
+                @media (max-width: 800px) {
+                    position: relative;
+                    top: 60px;
+                    font-size: 26px;
+                }
             }
             .login-container {
-                background: lightblue;
-                /* right: 382px; */
-                /* top: 111px; */
-                height: 12em;
-                /* position: absolute; */
+                display: flex;
+                height: 23em;
+                opacity: 1 !important;
                 align-items: center;
                 justify-content: center;
-                width: 17em;
                 margin-top: 10px;
+
+
+
                 @media (max-width: 800px){ 
-                    width: 18em;
-                    // border-radius: 20%;
+                    display: flex;
                 }
     
                 .login-info{
-                    position: absolute;
-                    top: 69px;
+                    display: flex;
+                    flex-direction: column;
+                    height: 90%;
+                    justify-content: center;
+
+                    .ui.animated.button {
+                        background: lightblue;
+                        color: black;
+                        top: 20px;
+                    }
+
+                    .login-inputs {
+                        height: 50px; 
+                        font-size: 14pt;
+                    }
                 }
             }
         }
         .signup-box {
             width: 17em;
-            height: 15em;
-            align-items: center;
-            justify-content: center;
-            right: 23px;
-            top: 107px;
             margin: 20px;
+
             @media (max-width: 800px){ 
                 width: 21em;
+                margin-top: -6%
             }
             // border: 2px solid black;
             .signup-title {
-                top: 20px;
                 font-size: 26px;
+
+                @media (max-width: 800px) {
+                    position: relative;
+                    top: 60px;
+                    font-size: 26px;
+                }
+
             }
             .signup-container {
-                background: lightblue;
-                /* right: 66px; */
-                /* top: 111px; */
-                height: 12em;
+                display: flex;
+                height: 23em;
                 opacity: 1 !important;
-                /* position: absolute; */
                 align-items: center;
                 justify-content: center;
-                /* width: 17em; */
                 margin-top: 10px;
+
                 @media (max-width: 800px){ 
-                    width: 18em;
-                    // border-radius: 20%;
+                    display: flex;
+                    height: 23em;
                 }
                 
                 .signup-info{
-                    position: absolute;
-                    top: 69px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 89%;
+                    height: 100%;
+                    
+
+                    .ui.animated.button {
+                        background: lightblue;
+                        color: black
+                    }
+
+                    .ui.large.form {
+                        height: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-direction: column
+                    }
+
+                    .ui.error.message {
+                        height: inherit;
+                    }
+
+                    input {
+                        border-radius: 4px;
+                    }
+                    
+
+                    @media (max-width: 800px) {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 27%;
+                    }
                 }
             }
         }

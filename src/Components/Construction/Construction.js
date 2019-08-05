@@ -10,8 +10,8 @@ class Construction extends Component {
         return ( 
             <div className="main-layout">
                 <div className="construction">
-                    Coming Soon... <br />
-                    Sef Green.
+                    <p>Coming Soon...</p>
+                    <p>Sef Green.</p>
                 </div>
             </div>
          );
