@@ -64,8 +64,6 @@ class Login extends Component {
             value: event.target.value
         }
 
-        // console.log('cell: ', cell)
-
         this.setState({
             [cell.name] : cell.value
         })
@@ -86,6 +84,8 @@ class Login extends Component {
                 .catch(err => {
                     console.error(err)
                     this.setState({ errors: this.state.errors.concat(err), loading: false })
+                }, () => {
+                    console.log('this.state.errors: ', this.state.errors)
                 })
             }
     }
